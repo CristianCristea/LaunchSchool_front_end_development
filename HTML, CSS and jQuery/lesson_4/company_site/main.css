@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+  color: #45494d;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*header*/
+
+header {
+  background: #2f2840 url('img/bg_body.gif') repeat left top;
+}
+
+nav{
+  padding: 25px 0 60px 0;
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 0 42px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #CACACA;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.active{
+  color: #6DB9FF;
+  font-weight: 700;
+}
+
+/*logo*/
+.logo{
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+/*sections*/
+
+main{
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section p{
+  text-align: justify;
+}
+
+.content{
+  background-color: white;
+}
+
+/*typo*/
+
+h2{
+  font-size: 36px;
+  font-weight: 700;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3{
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  padding-top: 0;
+  color: #3e98b2;
+}
+
+p{
+  padding: 0 100px 50px;
+  line-height: 1.4;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/*footer*/
+
+footer{
+  background-color: #e7e7e7; 
+  padding: 75px;
+}
+
+footer p {
+  color: #b2b2b2;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li{
+  display: inline-block;
+  padding: 0 60px;
+}
+
+footer li a {
+  display: block;
+  text-indent: -10000px;
+  height: 46px;
+  width: 46px;
+  overflow: hidden;
+  background: transparent url(img/icons_social-media.png) 0 0 no-repeat;
+}
+
+a.facebook {
+ background-position: 0 -46px;
+}
+
+a.email {
+ background-position: 0 -92px;
+}
+
+
+a.instagram {
+ background-position: 0 -138px;
+}
+
+/*projects*/
+
+section.projects img{
+  width: 100%;
+  height: auto;
+  padding: 60px 0 30px 0;
+}
+
+.app,
+.moment{
+  border-bottom: 1px solid #cacaca;
+}
+
+/*team*/
+.team-details ul li a{
+  text-decoration: none;
+  display: block;
+  }
+
+.team-details ul li{
+  display: inline-block;
+  padding: 20px 0 40px 60px;
+}
+
+.team-details ul h3 {
+  margin-top: 1em;
+  font-weight: 300;
+}
