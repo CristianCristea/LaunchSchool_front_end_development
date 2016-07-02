@@ -1,0 +1,122 @@
+/*general*/
+* {
+  box-sizing: border-box;
+}
+table { empty-cells: show; }
+
+body {
+  margin: 10px;
+  font-size: 28px;
+  font-family: Helvetica, sans-serif;
+}
+
+article {
+  width: 680px;
+  padding: 10px;
+  border: 2px solid #000;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h3 {
+  padding: 10px 0;
+  margin: 5px 0 0 0;
+  font-size: 1em;
+  font-weight: 600;
+  border-top: 30px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+p {
+  padding: 2px;
+}
+
+dl {
+  display: inline-block;
+  width: 48%;
+  padding: 6px 0;
+}
+
+dt {
+  display: inline;
+  font-weight: 700;
+}
+
+dd {
+  display: inline;
+  margin: 0;
+}
+
+header {
+  margin-bottom: 10px;
+  border-bottom: 15px solid #000;
+}
+
+header dl + dl {
+  text-align: right;
+}
+
+/*tables*/
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: right;
+  font-weight: 700;
+}
+
+tbody th{
+  padding: 5px 0;
+  text-align: left;
+  border-top: 1px solid #000;
+}
+
+tbody td {
+  padding: 5px 0;
+  border-top: 1px solid #000;
+  text-align: right;
+  font-weight: bold;
+}
+
+tbody + tbody td {
+  font-weight: normal;
+}
+
+.indent {
+  display: inline-block;
+  width: 100%;
+  margin-left: 20px;
+}
+
+table + table {
+  margin-top: 30px;
+}
+
+table + table thead tr {
+  border-bottom: 1px solid #000;
+  padding: 2px;
+}
+
+table + table tbody td,
+table + table thead th {
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: left;
+  border: none;
+}
+
+tfoot td:last-of-type {
+  padding: .8em 0 .8em 1em;
+  font-size: .9em;
+  font-weight: normal;
+  text-align: left;
+  text-indent: -.7em;
+  border-top: 1px solid #000;
+}
