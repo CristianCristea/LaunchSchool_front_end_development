@@ -10,6 +10,23 @@
   margin: 0 auto;
 }
 
+.button,
+.button-active {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background: #d2d5da;
+  -webkit-appearance: none;
+}
+
+.button-active {
+  background: #50c3af;
+}
+
 /* Typography */
 
 body {
