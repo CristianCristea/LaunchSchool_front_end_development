@@ -1,8 +1,12 @@
+/* general */
 * {
   box-sizing: border-box;
 }
 
-/* general */
+ul {
+  padding: 0;
+  margin: 0;
+}
 
 .container-header {
   width: 90%;
@@ -34,7 +38,8 @@ body {
 }
 
 p,
-.credentials {
+.credentials,
+aside h3 {
   font-size: 1.29em;
   color: #45494d;
   line-height: 1.4;
@@ -146,7 +151,7 @@ header nav a:hover {
 /* index page*/
 
 main {
-  padding: 2em;
+  padding: 1.6em;
   margin-top: 1.4em;
 }
 
@@ -162,5 +167,45 @@ main {
 .post-title a:hover {
   color: #32FFE3;
 }
+
+/* sidebars */
+
+aside {
+  padding: 1.6em;
+}
+
+aside p {
+  font-size: .9em;
+}
+
+aside h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  padding: 1.2em;
+  margin: 0 0 1.6em 0;
+  background: #f6f7f8;
+}
+
+aside ul {
+  display: block;
+  padding:  1.2em;
+}
+
+aside li {
+  list-style: url(../img/blt_ul.png);
+}
+
+aside li a {
+  color: #787b80;
+  text-decoration: none;
+}
+
+
 
 /* single-post page*/
