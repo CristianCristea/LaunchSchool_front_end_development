@@ -8,10 +8,18 @@ ul {
   margin: 0;
 }
 
+.container,
+.container-header {
+  margin: 0 auto;
+}
+
 .container-header {
   width: 90%;
   max-width: 505px;
-  margin: 0 auto;
+}
+
+.container {
+  max-width: 1000px;
 }
 
 .button,
@@ -147,6 +155,17 @@ header nav a:hover {
 }
 
 /* footer */
+
+footer {
+  border-top: 1px solid #d0d0d0;
+  text-align: center;
+}
+
+footer p {
+  padding: 1em 0 2em 0;
+  font-size: .9rem;
+  color: #7e8287;
+}
 
 /* index page*/
 
