@@ -44,13 +44,14 @@ ul {
 
 body {
   font: Helvetica, Arial, sans-serif;
+ color: #45494d;;
 }
 
 p,
 .credentials,
 aside h3 {
   font-size: 1.29em;
-  color: #45494d;
+  
   line-height: 1.4;
   font-weight: lighter;
 }
@@ -266,3 +267,23 @@ aside li a {
   }
 }
 /* single-post page*/
+
+.comment .credentials {
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.comment img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+} 
+
+@media screen and (min-width: 769px) {
+  .comments h2 {
+    font-size: 2.4em;
+  }
+}
