@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+/* general */
+
+.container {
+  width: 90%;
+  max-width: 505px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+body {
+  font: Helvetica, Arial, sans-serif;
+}
+
+/* header */
+
+header {
+  padding: 0;
+  margin: 0;
+  background: #3D3D3D;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 2.8em;
+  font-weight: normal;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #fff;
+  margin: 0 0 .6em 0;
+  padding-top: .9em;
+}
+
+@media screen and (min-width: 530px) {
+  header h1 {
+    font-size: 3.1em;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header h1 {
+    font-size: 4.4em;
+    padding-top: 1.8em;
+  }
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 90%;
+}
+
+@media screen and (min-width: 380px) {
+  header img {
+    width: 100%;
+  }
+}
+
+nav {
+  margin-top: 7em;
+  text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    padding-bottom: 2em;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+ display: inline-block;
+ width: 48%;
+ padding: .6em;
+}
+
+nav a {
+ text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 530px) {
+  nav li {
+    width: initial;
+    padding: 1em 2.5em 1em 0;
+  }
+}
+
+nav a:hover {
+  color: #F5DC39;
+}
+
+.active {
+  color: #32FFE3;
+}
+
+/* footer */
+
+/* index page*/
+
+/* single-post page*/
