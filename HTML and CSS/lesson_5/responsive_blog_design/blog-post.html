@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
- <header>
+  <header>
     <div class="container-header">
       <h1>Blog Title</h1>
       <img src="img/header-lines.png" alt="color lines">
@@ -22,64 +22,70 @@
       </nav>
     </div>
   </header>
-  <main>
-    <article>
-      <h2>Post Headline</h2>
-      <div class="credentials">Written by <span>Shane Riley </span>on <time>Feb, 15, 2014</time></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis exercitationem ipsa aut magni! Sapiente nihil, voluptatem accusantium quidem reprehenderit deserunt nulla eum, sed rerum quae soluta provident libero praesentium commodi?</p>
-    </article>
+  <div class="container">
+    <main>
+      <article>
+        <h2>Post Headline</h2>
+        <div class="credentials">Written by <span>Shane Riley </span>on <time>Feb, 15, 2014</time></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis exercitationem ipsa aut magni! Sapiente nihil, voluptatem accusantium quidem reprehenderit deserunt nulla eum, sed rerum quae soluta provident libero praesentium commodi?</p>
+      </article>
 
-    <div class="comments">
-      <div class="comment">
-        <img src="img/chris.png" alt="Photo of Chris">
-        <div class="credentials"><span>Chris </span>on <time>Feb, 15, 2014</time></div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae aliquam laudantium corrupti obcaecati ad quam atque consectetur asperiores possimus!
-        </p>
-      </div>  <!-- ./comment -->
-      <div class="comment">
-        <img src="img/kevin.png" alt="Photo of Kevin">
-        <div class="credentials"><span>Kevin </span>on <time>Feb, 15, 2014</time></div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae aliquam laudantium corrupti obcaecati ad quam atque consectetur asperiores possimus!
-        </p>
-      </div>  <!-- ./comment -->
-    </div>  <!-- ./comments -->
+      <div class="comments">
+        <div class="comment">
+          <img src="img/chris.png" alt="Photo of Chris">
+          <div class="credentials"><span>Chris </span>on <time>Feb, 15, 2014</time></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae aliquam laudantium corrupti obcaecati ad quam atque consectetur asperiores possimus!
+          </p>
+        </div>  <!-- ./comment -->
+        <div class="comment">
+          <img src="img/kevin.png" alt="Photo of Kevin">
+          <div class="credentials"><span>Kevin </span>on <time>Feb, 15, 2014</time></div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores beatae aliquam laudantium corrupti obcaecati ad quam atque consectetur asperiores possimus!
+          </p>
+        </div>  <!-- ./comment -->
+      </div>  <!-- ./comments -->
 
-    <form action="" method="post" name="new_comment" id="new_comment">
-      <fieldset>
-        <legend><h2>Post Comments</h2></legend>
+      <form action="" method="post" name="new_comment" id="new_comment">
+        <fieldset>
+          <legend><h2>Post Comments</h2></legend>
 
-        <label>
-          <input type="text" name="name" id="name" required placeholder="Enter your name">
-        </label>
+          <label>
+            <input type="text" name="name" id="name" required placeholder="Enter your name">
+          </label>
 
-        <label>
-          <input type="email" required autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Enter your Email Address">
-        </label>
+          <label>
+            <input type="email" required autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Enter your Email Address">
+          </label>
 
-        <textarea required name="comment_body" id="commentBody" cols="30" rows="10" placeholder="Enter your Comments"></textarea>
+          <textarea required name="comment_body" id="commentBody" cols="30" rows="10" placeholder="Enter your Comments"></textarea>
 
-        <input type="submit" value="submit">
-      </fieldset>
-    </form>
-  </main>
-  <aside>
-    <div class="categories">
-      <nav>
-        <ul>
-          <li><a href="#">HTML</a></li>
-          <li><a href="#">CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">Other</a></li>
-        </ul>
-      </nav>
-    </div>
+          <input type="submit" value="submit">
+        </fieldset>
+      </form>
+    </main>
+    <aside>
+      <div class="block categories">
+      <h3>Categories</h3>
+        <nav>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Other</a></li>
+          </ul>
+        </nav>
+      </div>
 
-    <div class="about">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem voluptates, illum laudantium delectus autem quia nostrum. A, quos, dolor!
-    </div>
-  </aside>
+      <div class="block about">
+        <h3>Categories</h3>
+       <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rem voluptates, illum laudantium delectus
+       </p>
+      </div>
+    </aside>
+  </div> <!-- ./container -->
 
   <footer class="container">
     <p>
