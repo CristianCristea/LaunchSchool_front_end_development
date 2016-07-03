@@ -4,7 +4,7 @@
 
 /* general */
 
-.container {
+.container-header {
   width: 90%;
   max-width: 505px;
   margin: 0 auto;
@@ -14,6 +14,19 @@
 
 body {
   font: Helvetica, Arial, sans-serif;
+}
+
+p,
+.credentials {
+  font-size: 1.29em;
+  color: #45494d;
+  line-height: 1.4;
+  font-weight: lighter;
+}
+
+.author {
+  color: #32FFE3;
+  text-decoration: none;
 }
 
 /* header */
@@ -61,31 +74,31 @@ header img {
   }
 }
 
-nav {
+header nav {
   margin-top: 7em;
   text-align: center;
 }
 
 @media screen and (min-width: 769px) {
-  nav {
+header nav {
     padding-bottom: 2em;
   }
 }
 
-nav ul {
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-nav li {
+header nav li {
  display: inline-block;
  width: 48%;
  padding: .6em;
 }
 
-nav a {
- text-decoration: none;
+header nav a {
+  text-decoration: none;
   color: #fff;
   font-size: 1.3em;
   font-weight: lighter;
@@ -93,13 +106,13 @@ nav a {
 }
 
 @media screen and (min-width: 530px) {
-  nav li {
+  header nav li {
     width: initial;
     padding: 1em 2.5em 1em 0;
   }
 }
 
-nav a:hover {
+header nav a:hover {
   color: #F5DC39;
 }
 
@@ -110,5 +123,23 @@ nav a:hover {
 /* footer */
 
 /* index page*/
+
+main {
+  padding: 2em;
+  margin-top: 1.4em;
+}
+
+.post {
+  margin-bottom: 5em;
+}
+
+.post-title  a {
+  text-decoration: none;
+  color: #45494d;
+}
+
+.post-title a:hover {
+  color: #32FFE3;
+}
 
 /* single-post page*/
