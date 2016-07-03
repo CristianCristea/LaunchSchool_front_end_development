@@ -188,6 +188,12 @@ main {
   color: #32FFE3;
 }
 
+@media screen and (min-width: 769px) {
+  .post h2 {
+    font-size: 2.4em;
+  }
+}
+
 /* sidebars */
 
 aside {
@@ -245,7 +251,8 @@ aside li a {
 
   main {
     float: left;
-    width: 70%;
+    width: 75%;
+    padding-right: 10%;
   }
   aside {
     overflow: hidden;
@@ -254,7 +261,7 @@ aside li a {
 
   aside .block {
     display: block;
-    /*padding: 1.6em;*/
+    width: 100%;
    
   }
 }
