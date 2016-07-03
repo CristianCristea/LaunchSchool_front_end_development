@@ -20,6 +20,7 @@ ul {
 
 .container {
   max-width: 1000px;
+  overflow: hidden;
 }
 
 .button,
@@ -195,6 +196,7 @@ aside {
 
 aside p {
   font-size: .9em;
+  padding-top: 1em;
 }
 
 aside h3 {
@@ -225,6 +227,35 @@ aside li a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 480px) {
+  aside {
+    background: #f6f7f8;
+    padding: 0 0 0 1em;
+  }
 
+  aside .block {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    /*padding: 0;*/
+  }
+}
 
+@media screen and (min-width: 769px) {
+
+  main {
+    float: left;
+    width: 70%;
+  }
+  aside {
+    overflow: hidden;
+     margin-top: 3.333em;
+  }
+
+  aside .block {
+    display: block;
+    /*padding: 1.6em;*/
+   
+  }
+}
 /* single-post page*/
