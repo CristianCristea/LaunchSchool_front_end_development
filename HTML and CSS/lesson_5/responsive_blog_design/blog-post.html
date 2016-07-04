@@ -52,17 +52,16 @@
         <fieldset>
           <legend><h2>Post Comments</h2></legend>
 
-          <label>
+          <label for="name">Name</label>
             <input type="text" name="name" id="name" required placeholder="Enter your name">
-          </label>
-
-          <label>
-            <input type="email" required autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Enter your Email Address">
-          </label>
-
-          <textarea required name="comment_body" id="commentBody" cols="30" rows="10" placeholder="Enter your Comments"></textarea>
-
-          <input type="submit" value="submit">
+          
+          <label for="email">Email</label>
+            <input type="email" id="email" required autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Enter your Email Address">
+                   
+          <label for="commentBody">Comment</label>
+            <textarea required name="comment_body" id="commentBody" cols="30" rows="10" placeholder="Enter your Comments"></textarea>
+          
+          <input type="submit" value="Submit" class="button-active">
         </fieldset>
       </form>
     </main>

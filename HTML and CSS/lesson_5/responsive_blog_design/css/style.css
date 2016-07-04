@@ -27,7 +27,7 @@ ul {
 .button-active {
   display: inline-block;
   padding: 5px 25px;
-  font-size: 14px;
+  font-size: 16px;
   color: #ffffff;
   cursor: pointer;
   border: none;
@@ -44,7 +44,7 @@ ul {
 
 body {
   font: Helvetica, Arial, sans-serif;
- color: #45494d;;
+  color: #45494d;;
 }
 
 p,
@@ -287,3 +287,47 @@ aside li a {
     font-size: 2.4em;
   }
 }
+
+/* form */
+form h2 {
+  padding: 2em 0 1em 0;
+  
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  font: bold 1.2em Helvetica, Arial, sans-serif;
+  padding-bottom: .4em;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea,
+label {
+  display: block;
+}
+
+input[type="text"], 
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: .8em 2em;
+  margin-bottom: 1em;
+  font-weight: normal;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: none;
+}
+
+@media screen and (min-width: 769px) {
+  form h2 {
+    font-size: 2.4em;
+  }
+}
+
