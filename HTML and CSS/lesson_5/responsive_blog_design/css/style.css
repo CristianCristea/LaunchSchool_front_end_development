@@ -27,6 +27,7 @@ ul {
 .button-active {
   display: inline-block;
   padding: 5px 25px;
+  font-weight: normal;
   font-size: 16px;
   color: #ffffff;
   cursor: pointer;
@@ -323,6 +324,24 @@ textarea {
 
 textarea {
   resize: none;
+}
+
+/* toggle form css-trick */
+
+form {
+  position: relative;
+  height: 0;
+  left: -100%;
+}
+
+input[name="toggle_form"] {
+  display: none;
+}
+
+input[name="toggle_form"]:checked + form {
+  height: auto;
+  left: 0;
+  transition: left 300ms linear;
 }
 
 @media screen and (min-width: 769px) {
