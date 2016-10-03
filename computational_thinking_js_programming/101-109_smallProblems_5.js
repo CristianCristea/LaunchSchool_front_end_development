@@ -339,3 +339,55 @@ function  alphabeticalNumbers(arr) {
 }
 
 // alphabeticalNumbers([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]);
+
+// 9.
+// ddaaiillyy ddoouubbllee
+
+// Write a method that takes a string argument and returns a new string that contains the value of the original string with all consecutive duplicate characters collapsed into a single character.
+
+// split the argument into an array of chars
+// filter - return the char if is not equal as the one before him
+
+
+function crunch(string) {
+  var chars = string.split("");
+  return chars.filter(function(elem, index, array) {
+    return elem !== array[index + 1];
+  }).join("");
+}
+
+// 10. Bannizer
+// Write a function that will take a short line of text, and print it within a box.
+// You may assume that the input will always fit in your terminal window.
+
+// declare a hyphen var containing the "-" 
+// create a line of hyphens and one of spaces based on the string length
+  // use a loop to add hyphens and spaces
+// display the result
+
+function bannizer(string) {
+  var hyphen = "-";
+  var line = "";
+  var lineSpace = "";
+  var plus = "+";
+  var space = " ";
+  var margin = "|";
+
+  for (var i = 0; i < string.length + 2; i++) {
+    line += hyphen;
+    lineSpace += space;
+  }
+
+  console.log(plus + line + plus);
+  console.log(margin + lineSpace + margin);
+  console.log(margin + " " + string + " " + margin);
+  console.log(margin + lineSpace + margin);
+  console.log(plus + line + plus);
+}
+
+// bannizer('To boldly go where no one has gone before.')
+// +--------------------------------------------+
+// |                                            |
+// | To boldly go where no one has gone before. |
+// |                                            |
+// +--------------------------------------------+
