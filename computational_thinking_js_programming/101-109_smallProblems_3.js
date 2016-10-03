@@ -3,6 +3,7 @@
 
 // Write a program that solicits 6 numbers from the user, then prints a message that describes whether or not the 6th number appears amongs the first 5 numbers
 
+// Approach
 // get the first five numbers - user input 
 // add them to an array
 // get the 6th number
@@ -46,6 +47,7 @@ searchingNumber();
 // Arithmetic integer
 // Write a program that prompts the user for two positive integers, and then prints the results of the following operations on those two numbers: addition, subtraction, product, quotient, remanider and power. Do not worry about validating the input.
 
+// Approach
 // get user input - the 2 numbers
 // check if they are number type - min input validation
 // perform operations 
@@ -93,6 +95,7 @@ function arithmeticInteger() {
 // Counting the Number of Characters
 // Write a program that will ask a user for an input of a word or multiple words and give back the numbers of characters. Spaces should not be counted as characters.
 
+// Approach
 // get user input
 // remove spaces
   // replace method
@@ -152,6 +155,7 @@ square(-8) === 64;
 
 // In this exercise, you will write a method named xor that takes two arguments, and returns true if exactly one of its arguments is true, false otherwise.
 
+// Approach
 // check if one argument evaluates to true
 // return true
 // if both arguments evaluate to false 
@@ -196,6 +200,7 @@ xor(even(5), odd(4)) === false;
 // Odd Lists
 // Write a function that return an Array that contains every other element of an Array that is passed in as an argument. The values in the returned list should be those values that are in the 1st, 3rd, 5th and do on elements of the argument Array.
 
+// Approach
 // declare a result array
 // loop through the argument array
 // check if the index is an even number (arrays indexes are 0 based - so index 0 is the first element of the array)
@@ -231,7 +236,7 @@ oddities([]) // => [];
 // Palidromic Strings
 // Write a function thatreturn true if the string passed as an argument is a palindrome, false otherwise (A palidrome reads the same forwards and backwards). Case matters, and all characters should be condsidered.
 
-
+// Approach
 // inverse the string
    // split the string into letters -array
    // reverse the array
@@ -284,6 +289,7 @@ function real_palindrome(string) {
 // Palindromic Numbers
 // Write a function that returns true if its integer argument is palindromic, false otherwise. A palindromic number reads the same forwards and backwards
 
+// Approach
 // basic input validation - number
 // convert the number to string
 // reverse the string 

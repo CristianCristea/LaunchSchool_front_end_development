@@ -67,6 +67,7 @@ digitList(444)    //  [4, 4, 4];
 
 vehicles = ['car', 'car', 'truck', 'car', 'SUV', 'truck', 'motorcycle', 'motorcycle', 'car', 'truck'];
 
+// Approach
 // create an object
 // loop through the array
 // add the elem as a key and initialize with 1
@@ -122,6 +123,7 @@ reverseSentence('Reverse these words') === 'words these Reverse';
 // 6.
 // Write a function that takes one argument, a string containing one or more words, and returns the given string with all five or more letter words reversed. Each string will consist of only letters and spaces.Spaces should only be included when more than one word is present.
 
+// Approach
 // reverse a string
   // split the string into letters
   // reverse the letters
@@ -150,6 +152,7 @@ function reverseWords(text) {
 // 7.
 // Write a function that takes one argument, a positive integer, and returns a string of alternating 1s and 0s, always starting with 1. The length of the string should match the given integer
 
+// Approach
 // create a return string var initialize with 1
 // create a loop upto the number
 // add 0s and 1s inside the loop
@@ -197,12 +200,14 @@ function stringy(number) {
 // 8.
 // Write a function that takes one argument, an array containing integers, and returns the average of all numbers in the array. The array will never be empty and the numbers will always be positive integers.
 
-function average(arr) {
-  // calculate the sum of the elem
-    // loop through the array and add the elements
-  // devide through the arr.length
-  // return the result
+// Approach
+// calculate the sum of the elem
+  // loop through the array and add the elements
+// devide through the arr.length
+// return the result
 
+
+function average(arr) {
   var total = 0;
 
   arr.forEach(function(number) {
@@ -230,6 +235,7 @@ function average(arr) {
 // 9.
 // Write a function that takes one argument, a positive integer, and returns the sum of his digits.
 
+// Approach
 // check if the argument is a number
 // convert the number to a string
 // create an array of string-numbers
@@ -258,6 +264,7 @@ sum(123456789) == 45;
 // Write a function that takes two arguments, a positive integer and a boolean and calculates the bonus for a given salary. If the boolean is true, the bonus should be half of the salary. If the boolean is false, the bonus should be 0;
 
 
+// Approach
 // set the bonus value
 // return the bonus
 function calculateBonus(salary, bonus) {

@@ -1,6 +1,7 @@
 // 1.
 // Build a program that randomly generates and prints Tedd's age. To get the age, you should generate a random number between 20 and 200.
 
+// Approach
 // generate a random number between 20 and 200
   // set a min age
   // set a max age
@@ -24,6 +25,7 @@ ageTeddy();
 // 2.
 // Build a program that asks a user for the length and with of a room in meters and then displays the area of the room in both square meters and square feet.
 
+// Approach
 // prompt the width and length of the room - store in var
 // calculate the room area in m - store in a var
 // transform the area in feet
@@ -54,6 +56,7 @@ roomArea();
 // 3.
 // Create a simple tip calculator. The program should prompt for a bill amount and a tip rate. The program must compute the tip and then display both the tip and the total amount of the bill.
 
+// Approach
 // prompt the bill amount and tip percentage
 // calculate the tip
 // calculate the total bill
@@ -82,6 +85,7 @@ billCalculator();
 // 4.
 // Build a program that displays when the user will retire and how many years she has to work till retirement.
 
+// Approach
 // get the user actual age and retirement age
 // get the current year 
 // calculate the remaining years of work
@@ -112,6 +116,7 @@ retirement();
 // 5.
 // Write a program that will ask for user's name. The program will then greet the user. If the user writes "name!" then the computer yells back at the user.
 
+// Approach
 // get the user input
 // check if the input has an "!" at the end
   // use regex to check for "!"
@@ -139,6 +144,7 @@ greeting();
 // 6.
 // Print all odd numbers from 1 to 99, inclusive. All numbers should be printed on separate lines.
 
+// Approach
 // loop through the numbers from 1 to 99
 // check every number if it is odd
 // alternative increment i with 2 and print the number
@@ -163,6 +169,7 @@ oddNumbers();
 // 7.
 // Print all the even numbers from 1 to 99, inclusive. All numbers should be printed on separate lines.
 
+// Approach
 // same approach as above
 // alternative use a while loop
 
@@ -191,7 +198,7 @@ evenNumbers();
 // Sum or product of consecutive integers
 // Write a program that asks the user to enter an integer greater than 0, then asks if the user wants to determine the sum or porduct of all numbers between 1 and the entere integer.
 
-
+// Approach
 // get the user input - number
 // convert to a number
 // get the user input - s or p

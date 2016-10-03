@@ -4,7 +4,7 @@
 // Write a function that takes a floating point number that represents an angle between 0 and 360 degrees and returns a String that represents that angle in degrees, minutes, and seconds. You should use a degree symbol (˚) to represent degrees, a single quote (') to represent minutes, and a double quote (") to represent seconds. There are 60 minutes in a degree, and 60 seconds in a minute.
 
 
-// abstraction
+// Approach
 // decimal degrees as input (dd)
 // degrees = integer part of the number
 // d = integer(dd)
@@ -195,10 +195,14 @@ list = [];
 
 // Write a function that takes two Arrays as arguments, and returns an Array that contains all of the values from the argument Arrays. There should be no duplication of values in the returned Array, even if there are duplicates in the original Arrays.
 
+// Approach
 // compare the 2 array lengths - iterate through the bigger array
 // if one elem is undefined do not add it to the new array (one array bigger than the other)
 // if two elements are the same - add just one
 // return the new array 
+
+// test
+merge([1, 3, 5], [3, 6, 9]) // # => [1, 3, 5, 6, 9]
 
 function merge(arr1, arr2) {
   var len = 0;
@@ -222,9 +226,6 @@ function merge(arr1, arr2) {
   return result;
 }
 // #> [1, 3, 6, 5, 9]
-
-// test
-merge([1, 3, 5], [3, 6, 9]) // # => [1, 3, 5, 6, 9]
 
 function merge(arr1, arr2) {
   var result = [];
@@ -267,7 +268,6 @@ function halvsies(arr) {
   result.push(firstArray, secondArray);
   return result;
 }
-
 
 // tests
 
@@ -364,7 +364,7 @@ function triangle(n) {
 
 // tests
 
-// triangle(5)
+triangle(5);
 
 //     *
 //    **
@@ -372,7 +372,7 @@ function triangle(n) {
 //  ****
 // *****
 
-// triangle(9)
+triangle(9);
 
 //         *
 //        **

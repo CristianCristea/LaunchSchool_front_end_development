@@ -2,6 +2,7 @@
 // Short Long Short
 // Write a function that takes two strings as arguments, determines the lonest of the two strings, and then returns the result of concatenating the shorter string, the longer string, and the shorter string once again. You may assume that the strings are of different lengths.
 
+// Approach
 // compare the length of the 2 strings
 // concatenate the strings
 // return the result
@@ -25,7 +26,7 @@ short_long_short('', 'xyz') === "xyz";
 
 // New centuries begin in years that end with 01. So, the years 1901-2000 comprise the 20th century.
 
-
+// Approach
 // 01-100 - 1
 // 101 - 200 2
 // 1991 - 2000 - 20
@@ -76,7 +77,7 @@ function century(year) {
 
 // Assume this rule is good for any year greater than year 0. Write a method that takes any year greater than 0 as input, and returns true if the year is a leap year, or false if it is not a leap year.
 
-
+// Approach
 // x is a leap year if 
   // x % 4 === 0 && x % 100 !== 0
   // or x % 4 === 0 && x % 100 === 0 and && x % 400 === 0
@@ -147,6 +148,7 @@ function leap_year(year) {
 
 // You may assume that the number passed in is an integer greater than 1.
 
+// Approach
 // loop through the number from 1 to input number
 // if the number is a multiple of 3 or 5 add it 
   // optional create a function to check if a number is a multiple of 3 or 5
@@ -172,6 +174,7 @@ function multisum(number) {
 // Running totals
 // Write a function that takes an Array of numbers and returns an Array with the same number of elements adn each element has the running total from the original Array
 
+// Approach
 // loop through the original array
 // calculate the running sum
 // add the running sum as an element to the result Array
@@ -412,46 +415,3 @@ string_to_signed_integer('4321') === 4321;
 string_to_signed_integer('-570') === -570;
 string_to_signed_integer('+100') === 100;
 
-// 9.
-// Convert a Number to a String
-// In the previous two exercises, you developed methods that convert simple numeric strings to signed Integers. In this exercise and the next, you're going to reverse those methods.
-
-// Write a function that takes a positive integer or zero, and converts it to a string representation.
-
-// You may not use any of the standard conversion methods available in JS. Your method should do this the old-fashioned way and construct the string by analyzing and manipulating the number.
-
-
-// Pseudo
-// declare an object with numbers as keys and string-type numbers as values
-
-// iterate through the numbers obj 
-  // if the key
-
-// iterate through the first array(obj keys)
-  // if a key matches the value from the "parameter" - array - add the value coresponding to the key to a result array
-
-// join and return the result array
-
-var numbers = {
-  0: '0',
-  1: '1',
-  2: '2',
-  3: '3',
-  4: '4',
-  5: '5',
-  6: '6',
-  7: '7',
-  8: '8',
-  9: '9'
-} 
-
-
-function integer_to_string(number) {
- var numbers 
-}
-
-// tests
-
-integer_to_string(4321) === '4321';
-integer_to_string(0) === '0';
-integer_to_string(5000) === '5000';
