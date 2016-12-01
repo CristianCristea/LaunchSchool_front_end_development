@@ -216,3 +216,45 @@ function featured(number) {
     }
   } while (true);
 }
+
+// 6.
+// Sum Square - Square Sum
+
+// Write a method that computes the difference between the square of the sum of the first n positive integers and the sum of the squares of the first n positive integers.
+
+// helper function
+  // count from 1 through n
+  // push to an array
+  // reduce the array to the sum of elem
+// helper function
+  // same approach
+  // reduce to sum of squares of elem
+// calculate the difference
+
+function digitsSum(number) {
+  var numbers = [];
+
+  for (var i = 1; i <= number; i++) {
+    numbers.push(i);
+  }
+
+  return numbers.reduce(function(sum, elem) {
+    return sum + elem;
+  });
+}
+
+function digitsSquareSum(number) {
+  var numbers = [];
+
+  for (var i = 1; i <= number; i++) {
+    numbers.push(i);
+  }
+
+  return numbers.reduce(function(sum, elem) {
+    return sum + Math.pow(elem, 2);
+  }, 0);
+}
+
+function sumSquareDifference(number) {
+  return Math.pow(digitsSum(number), 2) - digitsSquareSum(number);
+}
