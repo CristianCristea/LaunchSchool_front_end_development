@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: tomato;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto 0 auto;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+form {
+  width: 25%;
+  margin: 0 auto;
+}
+
+form fieldset {
+  border: none;
+}
+
+a[name='toggle_accordion'] {
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 30%;
+  color: tomato;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+a[name='toggle_accordion']:hover {
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  vertical-align: top;
+  color: tomato;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid tomato;
+}
+
+input[type="submit"] {
+  width: 40px;
+  height: 40px;
+  vertical-align: top;
+  background-color: tomato;
+  color: white;
+  border: 1px solid tomato;
+  border-style: solid;
+  text-align: center;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: tomato;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+
+
+

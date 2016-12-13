@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise: jQuery Events</title>
+  <link  rel="stylesheet"  href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Type a key to toggle the accordion with</h1>
+    <form action="#">
+      <fieldset>
+        <input type="text" maxlength="1" id="key" name="key">
+        <input type="submit" value="Set">
+      </fieldset>
+    </form>
+
+    <a href="#" name="toggle_accordion">Toggle accordion</a>
+
+    <p id="accordion">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ut cupiditate vero, eveniet officia iste dignissimos tenetur neque ea quidem incidunt aspernatur hic, aliquam id odit corporis placeat maiores beatae. Doloremque consequatur, maxime consequuntur unde. Placeat reprehenderit unde ab. Perferendis quas ducimus maiores nemo quibusdam repellat optio facere cumque pariatur in non ipsam saepe aliquam odit explicabo voluptatem debitis excepturi minus, quis quae! Similique aliquam magni nulla aperiam expedita aliquid, reprehenderit dignissimos! Aliquam quae aut cum unde, laborum dicta obcaecati quo ratione sapiente quasi temporibus ea similique sunt tenetur suscipit perspiciatis nulla nostrum! Incidunt iusto provident tempore blanditiis nisi sed.
+    </p>
+  </div>
+
+  <script src="../../assets/jquery-3.1.1.min.js"></script>
+  <script>
+    var character;
+    var characterCode;
+
+    $('form').on('submit', function(event) {
+      event.preventDefault();
+      character = $('#key').val();
+      characterCode = character.charCodeAt(0);
+
+      $(document).off('keypress').on('keypress', function(event) {
+        if (event.which !== characterCode) { return; }
+        $('a').trigger('click');
+      });
+    });
+
+    $('a').on('click', function(event) {
+      event.preventDefault();
+      $('#accordion').slideToggle();
+    });
+  </script>
+</body>
+</html>
