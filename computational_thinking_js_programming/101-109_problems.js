@@ -258,3 +258,324 @@ function digitsSquareSum(number) {
 function sumSquareDifference(number) {
   return Math.pow(digitsSum(number), 2) - digitsSquareSum(number);
 }
+
+// Delete Vowels
+
+// Write a function that takes an array of strings, and 
+// returns an array of the same string values without the vowels (a, e, i, o, u).
+
+// input
+  // array of strings
+// output
+  // the array - every string without vowels (a, e, i, o, u);
+
+// helper function to remove vowels from one string 
+  // define an array with the vowels
+  // loop through the string
+  // add the curren char to an output string
+  // if the current char is a vowel skip it
+  // retur the output string
+// filter the array to remove vowels
+// return value
+
+function removeVowelsFromString(string) {
+  var vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  var output = '';
+
+  for (var i = 0; i < string.length; i++) {
+    if (vowels.indexOf(string[i]) !== -1 || vowels.indexOf(string[i].toUpperCase()) !== -1) {
+      continue;
+    }
+    output += string[i];
+  }
+
+  return output;
+}
+
+
+function removeVowelsFromString(string) {
+  return string.replace(/[aeiou]/ig, '');
+}
+
+function removeVowels(arr) {
+  return arr.map(removeVowelsFromString);
+}
+
+
+
+// Example:
+
+removeVowels(['abcdefghijklmnopqrstuvwxyz']);             // ['bcdfghjklmnpqrstvwyxz']
+removeVowels(['green', 'YELLOW', 'black', 'white']);      // ['grn', 'YLLW', 'blck', 'wht']
+removeVowels(['ABC', 'AEIOU', 'XYZ']);                    // ['BC', '', 'XYZ']
+
+// Lettercase Counter
+
+// Write a function that takes a string, and then returns an object 
+// that contains 3 properties: one representing the number of characters 
+// in the string that are lowercase letters, one representing the number 
+// of characters that are uppercase letters, and finally one representing 
+// the number of characters that are neither.
+
+// input
+  // string
+// output
+  // object {'lowercase': value, 'uppercase': value, 'neither': value}
+
+// split to an array
+// reduce to an object
+  // use char code value
+// return the value
+
+function charCase(char) {
+  if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+    return 'uppercase';
+  } else if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
+    return 'lowercase';
+  } else {
+    return 'neither';
+  }
+}
+
+function letterCaseCount(string) {
+  var chars = string.split('');
+
+  return chars.reduce(function(obj, elem) {
+    if (!obj[charCase(elem)]) {
+      obj[charCase(elem)] = 1;
+    } else {
+      obj[charCase(elem)]++;
+    }
+    return obj;
+  }, {});
+}
+
+function charCase(char) {
+  var output = {
+    'lowercase': 0, 
+    'uppercase': 0, 
+    'neither': 0
+  };
+
+  if (char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90) {
+    output.uppercase++;
+  } else if (char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122) {
+    output.lowercase++;
+  } else {
+    output.neither++;
+  }
+
+  return output;
+}
+
+
+// Examples
+
+letterCaseCount('abCdef 123'); // { lowercase: 5, uppercase: 1, neither: 4 }
+letterCaseCount('AbCd +Ef');   // { lowercase: 3, uppercase: 3, neither: 2 }
+letterCaseCount('123');        // { lowercase: 0, uppercase: 0, neither: 3 }
+letterCaseCount('');           // { lowercase: 0, uppercase: 0, neither: 0 }
+
+// Capitalize Words
+
+// Write a function that takes a single string argument and returns a new string that contains the original value of the argument with the first character of every word capitalized and all succeeding characters in lowercase.
+
+// You may assume that words are any sequence of non-blank characters.
+
+// helper function capitalizeWord()
+// split to words
+// map to new array - call capitalizeWord on every elem
+
+function capitalizeWord(word) {
+  return word[0].toUpperCase() + word.slice(1).toLowerCase();
+}
+
+function wordCap(string) {
+  return string.split(' ').map(capitalizeWord).join(' ');
+}
+
+// Examples
+
+wordCap('four score and seven')    // 'Four Score And Seven'
+wordCap('the javaScript language') // 'The Javascript Language'
+wordCap('this is a "quoted" word') // 'This Is A "quoted" Word'
+
+// Swap Case
+
+// Write a function that takes a string as an argument and returns a new string in which lowercase letters replace every uppercase and vice versa. Leave all other characters unchanged.
+
+// input
+  // string - lower and upper case letters
+// output
+  // same string - letter with inverted case
+
+// loop through the string
+// identify current char case
+  // string.charCodeAt()
+// change the case or copy the char
+// return output
+
+function swapcase(string) {
+  var output = '';
+  
+  for (var i = 0; i < string.length; i++) {
+    if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
+      output += string[i].toLowerCase();
+    } else if (string.charCodeAt(i) >= 97 && string.charCodeAt(i) <= 122) {
+      output += string[i].toUpperCase();
+    } else {
+      output += string[i];
+    }
+  }
+
+  return output;
+}
+
+// Example:
+
+swapcase('CamelCase');         // 'cAMELcASE'
+swapcase('Tonight on XYZ-TV'); // 'tONIGHT ON xyz-tv'
+
+
+
+// Take 2 strings s1 and s2 including only letters from ato z. 
+// Return a new sorted string, the longest possible, containing distinct letters,
+ // - each taken only once - coming from s1 or s2.
+
+// Examples:
+
+a = "xyaabbbccccdefww";
+b = "xxxxyyyyabklmopq";
+longest(a, b); // -> "abcdefklmopqwxy"
+
+a = "abcdefghijklmnopqrstuvwxyz";
+longest(a, a); // -> "abcdefghijklmnopqrstuvwxyz"
+
+// helper function - remove doubles
+  // loop through the string
+  // if current char === the next char -> skip
+  // else -> add to output
+  // return output
+// concat the 2 strings
+// remove doubles again
+// split to array of letters
+// sort, join and return the result
+
+
+function removeDoubles(string) {
+  var output = '';
+
+  for (var i = 0; i < string.length; i++) {
+    if (string[i] === string[i + 1]) {
+      continue;
+    } else {
+      output += string[i];
+    }
+  }
+
+  return output;
+}
+
+function longest(str1, str2) {
+  var cleanStr1 = removeDoubles(str1);
+  var cleanStr2 = removeDoubles(str2);
+  var output = (cleanStr1 + cleanStr2).split('').sort().join('');
+
+  return removeDoubles(output);
+}
+
+// Longest Palindrome
+
+// Find the length of the longest substring in the given string s that is the same in reverse.
+
+// As an example, if the input was “I like racecars that go fast”, the substring (racecar) length would be 7.
+
+// If the length of the input string is 0, return value must be 0.
+
+// input
+  // string of chars
+// output
+  // number - integer type
+  // repr. length of the longest palindromic string
+
+// get an array of substrings
+  // declare an output array
+  // loop through the string
+    // push one substring at a time - slice(0, i) - iterator = 1
+  // return the output
+// filter to an array of palindromic strings
+  // helper function isPanlindrome(word)
+    // reverse the string
+    // compare it to itself
+    // return boolean
+// sort the substrings asc by length
+// return the last elem
+
+
+function substrings(string) {
+  var output = [];
+
+  for (var i = 1; i <= string.length; i++) {
+    output.push(string.slice(0, i));
+  }
+
+  return output;
+}
+
+function allSubstrings(string) {
+  var output = [];
+
+  for (var i = 0; i <= string.length; i++) {
+    output.push(substrings(string.slice(i)));
+  }
+
+  return output;
+}
+
+function isPalindrome(string) {
+  return string.split('').reverse().join('') === string;
+}
+
+
+function flattenArray(array) {
+  var output = [];
+
+  array.forEach(function(arr) {
+    output = output.concat(arr);
+  });
+
+  return output;
+}
+
+
+function longestPalindrome(string) {
+  var arrayOfSubstrings = flattenArray(allSubstrings(string));
+  var palindromicSubstrings = arrayOfSubstrings.filter(isPalindrome);
+  var longestString =  palindromicSubstrings.sort(function(a, b) {
+    return b.length - a.length;
+  })[0];
+
+  if (string === '') {
+    return 0;
+  }
+
+  return longestString.length;
+}
+
+"zzbaabcd";// -&gt; 4
+
+
+'abcde'
+'a'
+'ab'
+'abc'
+'abcd'
+'abcde'
+
+// Example:
+
+"a";// -&gt; 1 
+"aab";// -&gt; 2  
+"abcde";// -&gt; 1
+
+"";// -&gt; 0
