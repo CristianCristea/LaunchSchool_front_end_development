@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: tomato;
+  font-family: 'Helvetica', 'Arial', 'sans-serif';
+}
+
+.container {
+  max-width: 600px;
+  margin: 100px auto 0 auto;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+p {
+  margin: 0 auto;
+  width: 45%;
+}
+
+form fieldset {
+  border: none;
+}
+
+a[name='new_game'] {
+  display: block;
+  margin: 20px 40%;
+  width: 30%;
+  color: tomato;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+a[name='new_game']:hover {
+  text-decoration: underline;
+}
+
+input[type="text"] {
+  display: block;
+  margin: 30px auto 0 auto;
+  width: 44px;
+  height: 40px;
+  font-size: 1.4em;
+  vertical-align: top;
+  color: tomato;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 1px solid tomato;
+}
+
+input[type="submit"] {
+  width: 60%;
+  height: 40px;
+  display: block;
+  margin: 30px auto 0 auto;
+  background-color: tomato;
+  color: white;
+  border: 1px solid tomato;
+  border-style: solid;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color .3s;
+}
+
+input[type="submit"]:hover {
+  background-color: white;
+  color: tomato;
+  cursor: pointer;
+  text-align: center;  
+}
+
+input[type="submit"]:focus {
+  outline: none;
+}
+
+
+
+
+
