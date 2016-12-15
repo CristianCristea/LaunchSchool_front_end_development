@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: tomato;
+  font-family: 'Arial', 'Helvetica', 'sans-serif';
+}
+
+.container {
+  max-width: 400px;
+  background-color: #fff;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: tomato;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+h2 {
+  color: #4caf50;
+  line-height: 1.6;
+}
+
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+form label,
+form input {
+  display: block;
+  width: 100%;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: tomato;
+  font-weight: 600;
+}
+
+form label:hover {
+  cursor: pointer;
+}
+
+form input {
+  margin-bottom: 30px;
+  height: 40px;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: tomato;
+}
+
+form input:focus {
+  outline: none;
+  border: 2px solid #4caf50;
+}
+
+form input[type="submit"] {
+  height: 46px;
+  background-color: #4caf50;
+  color: #fff;
+  border: 2px solid #4caf50;
+  transition: all .2s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #4caf50;
+  cursor: pointer;
+}
+
+ul {
+  margin-left: 20px;
+  padding: 0;
+  list-style-position: inside;
+  
+}
+
+ul li {
+  color: #4caf50;
+  font-size: 1.2em;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
