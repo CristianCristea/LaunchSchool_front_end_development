@@ -1,12 +1,3 @@
-// get first number
-// get second number
-// get operator
-// calculate
-// print to page
-  // get the p tag
-  // change the content
-
-
 $(function() {
   var $first_number;
   var $second_number;
