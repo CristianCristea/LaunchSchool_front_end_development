@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Dynamic Animation jQuery</title>
+   <link rel="stylesheet" href="css_reset.css">
+   <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+    <main>
+      <div id="canvas"></div>
+      <p>
+        <a href="#" >Start</a>
+        <a href="#">Stop</a>
+      </p>
+
+     <form action="#" method="get">
+       <fieldset>
+        <legend>Add a shape</legend>
+        <p>Type</p>
+          <ul>
+              <li><label><input type="radio" name="shape_type" value="square">Square</label></li>
+              <li><label><input type="radio" name="shape_type" value="circle">Circle</label></li>
+              <li><label><input type="radio" name="shape_type" value="star">Star</label></li>
+          </ul>
+
+          <p>Starting Point</p>
+          <div class="container-form">
+            <label><input type="text" name="startX" placeholder="x:"></label>
+            <label><input type="text" name="startY" placeholder="y:"></label>
+          </div>
+
+          <p>Ending Point</p>
+          <div class="container-form">
+            <label><input type="text" name="endingX" placeholder="x:"></label>
+            <label><input type="text" name="endingY" placeholder="y:"></label>
+          </div>
+       </fieldset>
+
+        <input type="submit" value="Add">
+     </form>
+    </main>
+
+   <script src="../../assets/jquery-3.1.1.min.js"></script>
+   <script src="dynamic_animation.js"></script>
+ </body>
+ </html> 
