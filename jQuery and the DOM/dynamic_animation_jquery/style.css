@@ -38,6 +38,7 @@ main {
   width: 800px;
   height: 600px;
   background: linear-gradient(to bottom, #1FBFBB 0%, #36B8E9 100%);
+  position: relative;
 }
 
 #canvas + p {
@@ -89,3 +90,27 @@ form input[type="submit"]:hover {
   background-color: #fff;
   color: tomato;
 }
+
+.square,
+.star,
+.circle {
+  width: 58px;
+  height: 58px;
+  z-index: 1000;
+  position: absolute;
+  display: none;
+}
+
+.circle {
+  background-color: lightgreen;
+  border-radius: 50%;
+}
+
+.star {
+  background-image: url(star.png);
+}
+
+.square {
+  background-color: tomato;
+}
+
