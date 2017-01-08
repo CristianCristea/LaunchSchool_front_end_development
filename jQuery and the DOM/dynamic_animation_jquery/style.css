@@ -10,8 +10,82 @@ body {
   font-family: Helvetica, Arial, 'sans-serif';
   font-size: 16px;
   line-height: 1.4;
+  background-color: tomato;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.headline-secondary {
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /*layout*/
 
+main {
+  padding: 30px;
+  margin: 1em auto;
+  background-color: #fff;
+  width: 850px;
+}
+
+#canvas {
+  width: 800px;
+  height: 600px;
+  background: linear-gradient(to bottom, #1FBFBB 0%, #36B8E9 100%);
+}
+
+#canvas + p {
+  margin: 20px 0;
+}
+
 /*form*/
+
+form legend {
+  margin: 10px 0;
+}
+
+form p {
+  margin: 10px 0;
+}
+
+form ul {
+  margin-left: 30px;
+}
+
+form ul li {
+  margin-bottom: 5px;
+}
+
+form input[type="number"] {
+  font-size: 1em;
+  padding: 5px;
+  width: 100px;
+}
+
+form p ~ p {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  background-color: tomato;
+  font-size: 1em;
+  color: #fff;
+  padding: 5px;
+  width: 200px;
+  border: 2px solid tomato;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #fff;
+  color: tomato;
+}

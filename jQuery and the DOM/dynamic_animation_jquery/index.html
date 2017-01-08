@@ -17,8 +17,8 @@
 
      <form action="#" method="get">
        <fieldset>
-        <legend>Add a shape</legend>
-        <p>Type</p>
+        <legend class="headline">Add a shape</legend>
+        <p class="headline-secondary">Type</p>
           <ul>
               <li><label><input type="radio" name="shape_type" value="square">Square</label></li>
               <li><label><input type="radio" name="shape_type" value="circle">Circle</label></li>
@@ -27,14 +27,14 @@
 
           <p>Starting Point</p>
           <div class="container-form">
-            <label><input type="text" name="startX" placeholder="x:"></label>
-            <label><input type="text" name="startY" placeholder="y:"></label>
+            <label><input type="number" name="startX" placeholder="x:" min="1"></label>
+            <label><input type="number" name="startY" placeholder="y:" min="1"></label>
           </div>
 
           <p>Ending Point</p>
           <div class="container-form">
-            <label><input type="text" name="endingX" placeholder="x:"></label>
-            <label><input type="text" name="endingY" placeholder="y:"></label>
+            <label><input type="number" name="endingX" placeholder="x:" min="1"></label>
+            <label><input type="number" name="endingY" placeholder="y:" min="1"></label>
           </div>
        </fieldset>
 
