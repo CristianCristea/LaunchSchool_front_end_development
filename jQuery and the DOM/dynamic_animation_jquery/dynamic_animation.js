@@ -36,7 +36,7 @@ $(function() {
     $elem.animate({
       left: +data.end_x,
       top: +data.end_y
-    }, 1000);
+    }, +data.duration);
   }
 
   // reset the elem position
