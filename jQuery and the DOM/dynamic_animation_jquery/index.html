@@ -9,13 +9,13 @@
  <body>
 
     <main>
-      <div id="canvas"><div class="circle"></div><div class="star"></div><div class="square"></div></div>
+      <div id="canvas"></div>
       <p>
-        <a href="#" >Start</a>
-        <a href="#">Stop</a>
+        <a href="#" id="start_animation">Start</a>
+        <a href="#" id="stop_animations">Stop</a>
       </p>
 
-     <form action="#" method="get">
+     <form action="#" method="post">
        <fieldset>
         <legend class="headline">Add a shape</legend>
         <p class="headline-secondary">Type</p>
@@ -27,14 +27,14 @@
 
           <p>Starting Point</p>
           <div class="container-form">
-            <label><input type="number" name="startX" placeholder="x:" min="1"></label>
-            <label><input type="number" name="startY" placeholder="y:" min="1"></label>
+            <label><input type="number" name="start_x" placeholder="x:" min="1"></label>
+            <label><input type="number" name="start_y" placeholder="y:" min="1"></label>
           </div>
 
           <p>Ending Point</p>
           <div class="container-form">
-            <label><input type="number" name="endingX" placeholder="x:" min="1"></label>
-            <label><input type="number" name="endingY" placeholder="y:" min="1"></label>
+            <label><input type="number" name="end_x" placeholder="x:" min="1"></label>
+            <label><input type="number" name="end_y" placeholder="y:" min="1"></label>
           </div>
        </fieldset>
 

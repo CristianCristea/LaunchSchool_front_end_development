@@ -98,7 +98,6 @@ form input[type="submit"]:hover {
   height: 58px;
   z-index: 1000;
   position: absolute;
-  display: none;
 }
 
 .circle {
