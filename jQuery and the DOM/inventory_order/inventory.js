@@ -18,7 +18,7 @@ var inventory;
     // store the html in a var and remove it from page
     cacheTemplate: function() {
       var $i_tmpl = $('#inventory_item').remove();
-      this.template = $i_tmpl.html();
+      this.template = Handlebars.compile($i_tmpl.html());
     },
     // method to create new instance of the object and push it into a collection
     add: function() {
@@ -70,7 +70,7 @@ var inventory;
     newItem: function(e) {
       e.preventDefault();
       var item = this.add(),
-      $item = $(this.template.replace(/ID/g, item.id));
+      $item = $(this.template({id: item.id}));
       
       $('#inventory').append($item);
     },
