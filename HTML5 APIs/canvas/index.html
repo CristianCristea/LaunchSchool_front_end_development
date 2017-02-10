@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas API Test</title>
+  <style>
+    .test {
+      width: 200px;
+      height: 200px;
+      background-color: #00f;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="800" height="600"></canvas>
+  <div class="test"></div>
+  <img src="https://www.google.com/images/srpr/logo11w.png" />
+  <script>
+    var canvas = document.querySelector('canvas');
+    var ctx = canvas.getContext('2d');
+
+    // draw a rectangle
+    // ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    // draw and animate more rectangles
+    // var colors = ['#000', '#003', '#006', '#009', '#00c', '#00f'];
+    // function draw() {
+    //   colors.forEach(function(color, i) {
+    //     ctx.fillStyle = color;
+    //     ctx.fillRect(i * 20, i * 20, canvas.width - i * 40, canvas.height - i * 40);
+    //   });
+
+    //   colors.unshift(colors.pop());
+    // }
+
+    // setInterval(draw, 200);
+
+    // draw a circle
+    // var x = canvas.width / 2;
+    // var y = canvas.height / 2;
+    // var radius = x;
+    // ctx.beginPath();
+    // ctx.arc(x, y, radius, 0, 2 * Math.PI);
+    // ctx.fill();
+    // ctx.closePath();
+
+    // draw lines
+    // var x = canvas.width / 2;
+    // var y = canvas.height / 2;
+    // ctx.beginPath();
+    // ctx.strokeStyle = 'rgba(0, 102, 204, .7)';
+    // ctx.moveTo(x, y - 50);
+    // ctx.lineTo(x + 50, y);
+    // // ctx.lineTo(x - 50, y);
+    // ctx.lineTo(x, y - 50);
+    // ctx.stroke();
+    // ctx.closePath();
+
+    // draw an image
+    var img = document.querySelector('img');
+
+    // change the width and height to match the img size
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    ctx.drawImage(img, 0, 0);
+
+
+  </script>
+</body>
+</html>
