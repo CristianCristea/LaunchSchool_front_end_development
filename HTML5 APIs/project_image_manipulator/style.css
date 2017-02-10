@@ -1,0 +1,9 @@
+section {
+  width: 48%;
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
